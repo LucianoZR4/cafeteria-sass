@@ -393,7 +393,7 @@ h3 {
 }
 
 .bg-primario {
-  background-color: #E8505B;
+  background-color: #5E311E;
 }
 
 .mt-5 {
@@ -404,9 +404,9 @@ h3 {
   padding: 5rem 0;
   position: relative;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .header {
-    padding: 2rem 0;
+    min-height: 70rem;
   }
 }
 .header::before {
@@ -423,11 +423,72 @@ h3 {
   margin-top: 5rem;
   position: relative;
 }
+.header .contenido-header h1 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .header .contenido-header h1 {
+    margin-top: 10rem;
+  }
+}
 
 .header-inicio {
   background-image: url(../img/header_inicio.jpg);
 }
 
-.nav {
-  color: black;
+.barra {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.barra .logo {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .barra .logo {
+    width: 20rem;
+    margin: 0;
+  }
+}
+
+.nav-principal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .nav-principal {
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+  }
+}
+.nav-principal a {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .nav-principal a {
+    margin-bottom: 0;
+  }
+}
+.nav-principal a:hover {
+  color: #C39C63;
+}
+.nav-principal a.activo {
+  color: #C39C63;
 }
