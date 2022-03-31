@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    <header class="header header-inicio">
+    <header class="header header-nosotros">
         <div class="contenido-header container">
             <div class="barra">
                 <div class="logo">
                     <img src="build/img/logo.svg" alt="logo cafeteria">
                 </div>
                 <nav class="nav-principal">
-                    <a class="activo" href="index.html">Inicio</a>
-                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="index.html">Inicio</a>
+                    <a class="activo"  href="Nosotros.html">Nosotros</a>
                     <a href="proceso.html">Proceso</a>
                     <a href="menu.html">Menu</a>
                     <a href="galeria.html">Galeria</a>
@@ -28,13 +28,38 @@
             </div>
 
             <div class="texto-header">
-                <h1>Disfruta una deliciosa taza de cafe</h1>
+                <h1>Una nueva expericia cada dia</h1>
             </div>
         </div>
     </header>
 
     <main class="container contenido-principal">
-      
+        <h2><span>Conoce mas</span>sobre nosotros</h2>
+
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <picture>
+                <source
+                     srcset="build/img/nosotros_sidebar.avif"
+                     type="image/avif">
+                <source
+                     srcset="build/img/nosotros_sidebar.webp" 
+                     type="image/webp">
+                <source
+                     srcset="build/img/nosotros_sidebar.jpg"
+                     type="image/jpeg">
+                <img loading="lazy" decoding="async" src="build/img/nosotros_sidebar.jpg" lazyalt="imagen" width="500" height="300">
+                </picture>
+            </div>
+
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione voluptates totam odio autem placeat explicabo unde animi dolores fugiat. Amet tenetur facere reprehenderit, iure blanditiis vel fugit quos laborum?</p>
+                
+                <blockquote>Exelente Sabor!</blockquote>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla perferendis dicta dolorum deserunt maiores ex accusamus harum impedit qui facilis quisquam expedita eius sequi, error cum quasi blanditiis provident modi.</p>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
