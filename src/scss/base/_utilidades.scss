@@ -4,10 +4,14 @@
     text-align: center;
 }
 
-.bg-primario{
-    background-color: v.$primario;
+.bg-white{
+    background-color: v.$blanco;
 }
 
 .mt-5{
     margin-top: 5rem;
+}
+
+.margin-negativo-10{
+    margin-top: -10rem;
 }
